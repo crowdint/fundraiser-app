@@ -35,6 +35,11 @@ Create an admin user
 
     rake fundraiser:manager[email@test.com,123456]
 
+## Heroku
+
+At this point, if it works locally it works on Heroku. Just push the code and
+create your first user.
+
 # About the author
 
 [Crowd Interactive](http://www.crowdint.com) is a leading Ruby and Rails
