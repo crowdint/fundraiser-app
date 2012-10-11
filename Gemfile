@@ -19,3 +19,4 @@ gem 'jquery-rails'
 gem 'fundraiser', :path => '../fundraiser'
 
 gem 'devise'
+gem 'quiet_assets'
