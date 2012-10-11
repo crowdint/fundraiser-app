@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121011020822) do
+ActiveRecord::Schema.define(:version => 20121011233627) do
 
   create_table "fundraiser_contributions", :force => true do |t|
     t.string   "email"
@@ -52,15 +52,5 @@ ActiveRecord::Schema.define(:version => 20121011020822) do
   end
 
   add_index "fundraiser_settings", ["var"], :name => "index_fundraiser_settings_on_var"
-
-  create_table "fundraiser_users", :force => true do |t|
-    t.string   "email",              :default => "",    :null => false
-    t.string   "encrypted_password", :default => "",    :null => false
-    t.boolean  "is_manager",         :default => false, :null => false
-    t.datetime "created_at",                            :null => false
-    t.datetime "updated_at",                            :null => false
-  end
-
-  add_index "fundraiser_users", ["email"], :name => "index_fundraiser_users_on_email", :unique => true
 
 end

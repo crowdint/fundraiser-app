@@ -16,5 +16,4 @@ end
 
 gem 'jquery-rails'
 
-gem 'fundraiser', :git => 'git://github.com/crowdint/fundraiser.git'
-
+gem 'fundraiser', :path => '../fundraiser'
