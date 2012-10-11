@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/crowdint/fundraiser.git
-  revision: 458808d2d79e1966570f528d06ed8be2dcaa459b
+  revision: eb1fdd45e93c3afb7904128feef9af99240bd414
   specs:
     fundraiser (0.0.1)
       devise (~> 2.1.2)
