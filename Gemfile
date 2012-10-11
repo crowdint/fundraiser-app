@@ -17,3 +17,5 @@ end
 gem 'jquery-rails'
 
 gem 'fundraiser', :path => '../fundraiser'
+
+gem 'devise'
