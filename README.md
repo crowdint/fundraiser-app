@@ -3,11 +3,13 @@
 Example app that shows how to use the Fundraiser gem to set up your own
 crowdsourcing website.
 
+You can always clone this repo and you are ready to go.
+
 ## Create the Rails app
 
     rails new fundraiser-app
 
-## Install fundraisre
+## Install fundraiser
 
 Gemfile
 
