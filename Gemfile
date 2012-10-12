@@ -17,6 +17,7 @@ end
 gem 'jquery-rails'
 
 gem 'fundraiser', :path => '../fundraiser'
+gem 'crowdblog', :path => '../crowdblog'
 
 gem 'devise'
 gem 'quiet_assets'

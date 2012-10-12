@@ -11,7 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121011233902) do
+ActiveRecord::Schema.define(:version => 20121012005829) do
+
+  create_table "crowdblog_assets", :force => true do |t|
+    t.integer  "post_id"
+    t.string   "attachment"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "crowdblog_posts", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "permalink"
+    t.datetime "published_at"
+    t.integer  "author_id"
+    t.string   "state"
+    t.integer  "publisher_id"
+    t.boolean  "ready_for_review"
+    t.datetime "marked_for_review_at"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+  end
 
   create_table "fundraiser_contributions", :force => true do |t|
     t.string   "email"
