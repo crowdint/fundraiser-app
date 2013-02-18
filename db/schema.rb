@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121012005829) do
+ActiveRecord::Schema.define(:version => 20130218184624) do
 
   create_table "crowdblog_assets", :force => true do |t|
     t.integer  "post_id"
@@ -34,6 +34,11 @@ ActiveRecord::Schema.define(:version => 20121012005829) do
     t.datetime "updated_at",           :null => false
   end
 
+  create_table "crowdblog_users", :force => true do |t|
+    t.string "email"
+    t.string "name"
+  end
+
   create_table "fundraiser_contributions", :force => true do |t|
     t.string   "email"
     t.string   "reference"
@@ -41,6 +46,8 @@ ActiveRecord::Schema.define(:version => 20121012005829) do
     t.integer  "amount"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.string   "name"
+    t.string   "stripeToken"
   end
 
   create_table "fundraiser_pledges", :force => true do |t|
