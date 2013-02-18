@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/crowdint/fundraiser.git
-  revision: 5af7e88824f755bd5a0a93cb05886df5944adb18
-  branch: stripe
+  revision: 7ea8ebf842d1bd5b766700133dbeb478e1e4adae
+  branch: konsta
   specs:
     fundraiser (1.0.0.beta)
       haml-rails (~> 0.3.5)
@@ -171,7 +171,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   crowdblog (~> 0.3.0)
   devise
-  fundraiser!
+  fundraiser (~> 1.0.0.beta)!
   jquery-rails
   pg
   quiet_assets
