@@ -122,3 +122,19 @@ body.home-front {
 
   }
 }
+
+.buy {
+  position: relative;
+}
+.over {
+  background: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  display: none;
+  p {
+    padding-top: 50%;
+  }
+}

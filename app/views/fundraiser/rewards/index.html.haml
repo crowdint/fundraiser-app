@@ -23,6 +23,8 @@
 .row
   .span6
     .buy
+      .over
+        %p One moment please...
       %form#payment-form.form-horizontal{:action => '/manage_contributions.js', :method => "POST", "data-remote" => 'true'}
         .payment-errors
         .control-group
@@ -44,18 +46,18 @@
           %label.control-label
             = image_tag 'card.png'
           .controls
-            %input.card-number{:autocomplete => "off", :size => "20", :type => "text"}/
+            %input.card-number{:autocomplete => "off", :size => "20", :type => "text", :placeholder => '4242424242424242'}/
         .control-group
           %label.control-label
             = image_tag 'cvc.png'
           .controls
-            %input.card-cvc.span1{:autocomplete => "off", :size => "4", :type => "text"}/
+            %input.card-cvc.span1{:autocomplete => "off", :size => "4", :type => "text", :placeholder => "123"}/
         .control-group
           %label.control-label
             = image_tag 'expiration.png'
           .controls
-            %input.card-expiry-month.span1{:size => "2", :type => "text"}/
-            %input.card-expiry-year.span1{:size => "4", :type => "text"}/
+            %input.card-expiry-month.span1{:size => "2", :type => "text", :placeholder => "MM"}/
+            %input.card-expiry-year.span1{:size => "4", :type => "text", :placeholder => "YYYY"}/
         .control-group.button
           %button.submit-button{:type => "submit"}
             %span
