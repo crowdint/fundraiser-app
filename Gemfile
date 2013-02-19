@@ -22,7 +22,7 @@ end
 
 gem 'jquery-rails'
 
-gem 'fundraiser', '~> 1.0.0.beta' ,:git => 'git://github.com/crowdint/fundraiser.git', :branch => 'konsta'
+gem 'fundraiser' ,:git => 'git://github.com/crowdint/fundraiser.git', :branch => 'stripe'
 gem 'crowdblog', '~> 0.3.0'
 
 gem 'devise'
