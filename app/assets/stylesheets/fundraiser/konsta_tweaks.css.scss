@@ -1,21 +1,25 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
-@import url(http://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300&subset=latin,latin-ext);
 
 body.home-front {
   font-family: 'Oswald', sans-serif;
   background: url('/assets/bkg.png') no-repeat top center #197981;
   color: white;
+  text-transform: uppercase;
 }
 .home-front {
   header {
     background: white;
     width: 100%;
   }
+  .navbar {
+    margin-bottom: 0;
+  }
   .navbar-inner{
     background: white;
     border: none;
     box-shadow: none;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #888;
     .nav {
       margin-top: 14px;
     }
@@ -40,13 +44,15 @@ body.home-front {
       width: 150px;
       top: 228px;
       right: 174px;
+      font-size: 14px;
+      color: #ddd;
 
     }
   }
   h1 {
-    color: #F6C736;
-    font-size: 30px;
-    width: 680px;
+    color: #F8C552;
+    font-size: 25px;
+    width: 630px;
     text-align: center;
     margin: 0 auto;
     margin-top: 0px;
@@ -54,11 +60,15 @@ body.home-front {
 
     span {
       color: white;
-      font-size: 46px;
+      font-size: 45px;
     }
     span.date {
-      font-size: 30px;
+      font-size: 28px;
     }
+  }
+  h2 {
+    font-size: 20px;
+    span { font-size: 22px; }
   }
   #payment-form {
     .control-group {
@@ -79,10 +89,10 @@ body.home-front {
     .button {
       background: none;
       .submit-button {
-        background:#F6C736;
+        background:#F8C552;
         border: none;
         width: 100%;
-        font-size: 19px;
+        font-size: 22px;
         padding: 11px;
         text-transform: uppercase;
         span {
@@ -96,28 +106,33 @@ body.home-front {
 
   }
 
+
+
   #rewards {
     padding-top: 10px;
     h4 {
-      color: #BBB44F;
-      font-size: 30px;
-      line-height: 30px;
+      color: #F8C552;
+      font-size: 24px;
+      line-height: 24px;
       text-transform: uppercase;
     }
     .description {
       margin-bottom: 50px;
+      font-size: 16px;
     }
   }
 
   footer {
     margin-top:20px;
     padding: 5px 5px;
-    color: black;
+    color: gray;
+    font-size: 12px;
     background: white;
     p {
-      margin-top: 6px;
+      margin-top: 9px;
       margin-left: 10px;
-
+      letter-spacing: 1px;
+      word-spacing: 2px;
     }
 
   }
