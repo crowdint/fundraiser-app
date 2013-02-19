@@ -56,7 +56,7 @@
             = select_tag 'contributor[amount]', options_from_collection_for_select(@rewards, "amount", "title")
         .control-group
           %label.control-label
-            %input.card-number{:autocomplete => "off", :size => "20", :type => "text"}/
+            = image_tag 'card.png'
           .controls
             %input.card-number{:autocomplete => "off", :size => "20", :type => "text", :placeholder => '4242424242424242'}/
         .control-group
