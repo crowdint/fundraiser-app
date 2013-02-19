@@ -1,0 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext);
+
+body.home-front {
+  font-family: 'Oswald', sans-serif;
+  background: url('/assets/bkg.png') no-repeat top center #197981;
+  color: white;
+}
+.home-front {
+  header {
+    background: white;
+    width: 100%;
+  }
+  .navbar-inner{
+    background: white;
+    border: none;
+    box-shadow: none;
+    font-family: 'Open Sans', sans-serif;
+    .nav {
+      margin-top: 14px;
+    }
+  }
+
+  .konsta{
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+
+    img {
+      display: block;
+      position: relative;
+      z-index: 0;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+    p {
+      z-index:1;
+      position: absolute;
+      z-index: 1;
+      width: 150px;
+      top: 228px;
+      right: 174px;
+
+    }
+  }
+  h1 {
+    color: #F6C736;
+    font-size: 30px;
+    width: 680px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 60px;
+
+    span {
+      color: white;
+      font-size: 46px;
+    }
+    span.date {
+      font-size: 30px;
+    }
+  }
+  #payment-form {
+    .control-group {
+      background: white;
+      input {
+        border: none;
+      }
+    }
+    &.form-horizontal label.control-label {
+      padding-top: 10px;
+    }
+    input {
+      padding: 12px 4px
+    }
+    select {
+      margin: 12px 0;
+    }
+    .button {
+      background: none;
+      .submit-button {
+        background:#F6C736;
+        border: none;
+        width: 100%;
+        font-size: 19px;
+        padding: 11px;
+        text-transform: uppercase;
+        span {
+          background: url('/assets/star.png') no-repeat center center;
+          display: inline-block;
+          height: 15px;
+          width: 14px;
+        }
+      }
+    }
+
+  }
+
+  #rewards {
+    padding-top: 10px;
+    h4 {
+      color: #BBB44F;
+      font-size: 30px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+    .description {
+      margin-bottom: 50px;
+    }
+  }
+
+  footer {
+    margin-top:20px;
+    padding: 5px 5px;
+    color: black;
+    background: white;
+    p {
+      margin-top: 6px;
+      margin-left: 10px;
+
+    }
+
+  }
+}
