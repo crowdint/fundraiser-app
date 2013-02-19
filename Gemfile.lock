@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/crowdint/fundraiser.git
-  revision: 3e3e72c7a1d010d44e461971bc6d51f463f54bb3
+  revision: ca2c2fb1be8bc3a53473d7fcd72c1bba9871d7bf
   branch: stripe
   specs:
     fundraiser (1.0.0.beta)
