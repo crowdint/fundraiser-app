@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130218184624) do
+ActiveRecord::Schema.define(:version => 20130218223635) do
 
   create_table "crowdblog_assets", :force => true do |t|
     t.integer  "post_id"
@@ -48,6 +48,8 @@ ActiveRecord::Schema.define(:version => 20130218184624) do
     t.datetime "updated_at",     :null => false
     t.string   "name"
     t.string   "stripeToken"
+    t.string   "stripe_id"
+    t.string   "state"
   end
 
   create_table "fundraiser_pledges", :force => true do |t|
