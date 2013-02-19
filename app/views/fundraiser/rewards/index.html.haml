@@ -14,10 +14,22 @@
       %span #{number_to_currency Fundraiser::Settings.funding_goal}
       until
       %span.date #{Fundraiser::Settings.funding_end_date}
+.row
+  .span12.social
+    %script{:src => "http://w.sharethis.com/button/buttons.js", :type => "text/javascript"}
+    :javascript
+      stLight.options({publisher: "1f6a2a22-dd71-4dcd-9825-4e472822e217", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+    %span.st_facebook_large{:displaytext => "Facebook"}
+    %span.st_googleplus_large{:displaytext => "Google +"}
+    %span.st_twitter_large{:displaytext => "Tweet"}
+    %span.st_linkedin_large{:displaytext => "LinkedIn"}
+    %span.st_fblike_large{:displaytext => "Facebook Like"}
+    %span.st_pinterest_large{:displaytext => "Pinterest"}
+
 
 .row
   .span6
-    %h2 Backed by #{Fundraiser::Contribution.count} people
+    %h2 Choose a Rewar
   .span5.offset1
     %h2 Choose a Reward
 .row
@@ -44,7 +56,7 @@
             = select_tag 'contributor[amount]', options_from_collection_for_select(@rewards, "amount", "title")
         .control-group
           %label.control-label
-            = image_tag 'card.png'
+            %input.card-number{:autocomplete => "off", :size => "20", :type => "text"}/
           .controls
             %input.card-number{:autocomplete => "off", :size => "20", :type => "text", :placeholder => '4242424242424242'}/
         .control-group
