@@ -9,7 +9,7 @@
   .span12
     %h1
       Total Contribution:
-      %span #{number_to_currency Fundraiser::Contribution.total_contributed}
+      %span.total #{number_to_currency Fundraiser::Contribution.total_contributed}
       of
       %span #{number_to_currency Fundraiser::Settings.funding_goal}
       until
@@ -31,7 +31,7 @@
   .span5.offset2
     %h2
       Backed by
-      %span #{Fundraiser::Contribution.count}
+      %span.backers #{Fundraiser::Contribution.count}
       people
   .span4
     %h2 Choose a Reward
