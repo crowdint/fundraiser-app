@@ -28,15 +28,15 @@
 
 
 .row
-  .span6
+  .span5.offset2
     %h2
       Backed by
       %span #{Fundraiser::Contribution.count}
       people
-  .span5.offset1
+  .span4
     %h2 Choose a Reward
 .row
-  .span6
+  .span5.offset2
     .buy
       .over
         %p One moment please...
@@ -79,7 +79,7 @@
             Submit Payment
             %span
 
-  .span5.offset1
+  .span4
     #rewards
       = render @rewards
 

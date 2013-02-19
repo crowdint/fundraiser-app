@@ -20,6 +20,7 @@ body.home-front {
     font-size: 14px;
     color: #888;
     .nav {
+      font-weight: 300;
       margin-top: 14px;
     }
   }
@@ -42,32 +43,39 @@ body.home-front {
       z-index: 1;
       width: 150px;
       top: 228px;
-      right: 174px;
+      right: 158px;
       font-size: 14px;
       color: #ddd;
+      text-align: left;
+      font-weight: 300;
 
     }
   }
   h1 {
     color: #F8C552;
     font-size: 25px;
-    width: 630px;
+    width: 660px;
     text-align: center;
     margin: 0 auto;
     margin-top: 0px;
     margin-bottom: 18px;
+    font-weight: normal;
 
     span {
       color: white;
       font-size: 45px;
+      font-weight: bold;
+      padding: 0 10px;
     }
     span.date {
       font-size: 28px;
+      font-weight: normal;
     }
   }
   h2 {
     font-size: 20px;
-    span { font-size: 22px; }
+    font-weight: normal;
+    span { font-size: 22px; font-weight: bold; }
   }
   #payment-form {
     .control-group {
@@ -78,6 +86,10 @@ body.home-front {
     }
     &.form-horizontal label.control-label {
       padding-top: 10px;
+      width: 132px;
+    }
+    .controls {
+      margin-left: 140px;
     }
     input {
       padding: 12px 4px
@@ -108,15 +120,16 @@ body.home-front {
 
 
   #rewards {
-    padding-top: 10px;
     h4 {
       color: #F8C552;
       font-size: 24px;
       line-height: 24px;
       text-transform: uppercase;
+      margin-bottom: 0;
+      margin-top: 0;
     }
     .description {
-      margin-bottom: 50px;
+      margin-bottom: 25px;
       font-size: 16px;
     }
   }
@@ -132,6 +145,7 @@ body.home-front {
       margin-left: 10px;
       letter-spacing: 1px;
       word-spacing: 2px;
+      font-weight: 300;
     }
 
   }
@@ -155,4 +169,29 @@ body.home-front {
 .social {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.post {
+  padding-top: 20px;
+  border-bottom: 1px solid #005A5F;
+  -moz-box-shadow: 0px 1px 0px #009097;
+  -webkit-box-shadow: 0px 1px 0px #009097;
+  box-shadow: 0px 1px 0px #009097;
+  h1 {
+    text-align: left;
+    width: 100%;
+    font-size: 30px;
+  }
+  .body {
+    text-transform: none;
+    font-family: 'trebuchet ms';
+    p {
+      a {
+        color: rgb(247, 212, 122);
+        &:hover {
+          color: rgb(247, 212, 122)
+        }
+      }
+    }
+  }
 }
