@@ -3,13 +3,16 @@
     .navbar
       .navbar-inner
         = link_to fundraiser.root_path, :class => 'brand' do
-          = image_tag 'fundraiser-logo.png'
-        %ul.nav
-          %li= link_to 'Blog', crowdblog.root_path
-          - if current_user
+          = image_tag 'fundraiser.png'
+        - if current_user
+          %ul.nav
+            %li= link_to 'Blog', crowdblog.root_path
             %li= link_to 'Manage Rewards', fundraiser.manage_rewards_path
             %li= link_to 'Manage Blog', crowdblog.admin_posts_path
             %li= link_to 'Settings', fundraiser.edit_manage_settings_path
             %li= link_to 'Contributions', fundraiser.manage_contributions_path
             %li= link_to 'Sign out', main_app.destroy_user_session_path, :method => :delete
+        - else
+          %ul.nav.pull-right
+            %li= link_to 'Blog', crowdblog.root_path, class: 'blog-btn'
 

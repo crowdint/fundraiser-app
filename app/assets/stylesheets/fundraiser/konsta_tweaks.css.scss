@@ -23,6 +23,19 @@ body.home-front {
       font-weight: 300;
       margin-top: 14px;
     }
+    .blog-btn {
+      background: none repeat scroll 0 0 #F8C853;
+      color: black;
+      font-size: 14px;
+      margin-top: -7px;
+      padding: 5px 0;
+      text-align: center;
+      width: 50px;
+      &:hover {
+        background: #f8C853;
+        color: white;
+      }
+    }
   }
 
   .konsta{
@@ -37,17 +50,32 @@ body.home-front {
       margin: 0 auto;
       padding-top: 40px;
     }
-    p {
+    .box {
       z-index:1;
       position: absolute;
       z-index: 1;
-      width: 326px;
+      width: 145px;
       top: 184px;
-      right: 0px;
-      font-size: 14px;
-      color: #ddd;
-      text-align: left;
-      font-weight: 300;
+      right: 170px;
+      h1 {
+        font-size: 23px;
+        color: #F8C653;
+        text-align: left;
+        font-weight: 300;
+        width: auto;
+        line-height: 23px;
+        span {
+          font-size: 20px;
+          color: inherit;
+          font-weight: inherit;
+          padding: 0;
+        }
+      }
+      img {
+        margin:0;
+        padding:0;
+      }
+
 
     }
   }
@@ -120,6 +148,9 @@ body.home-front {
 
 
   #rewards {
+    background: #015f64;
+    padding: 15px 15px;
+    position: relative;
     h4 {
       color: #F8C552;
       font-size: 24px;
@@ -131,6 +162,18 @@ body.home-front {
     .description {
       margin-bottom: 25px;
       font-size: 16px;
+    }
+    &:before
+    {
+      content: '';
+      position: absolute;
+      top: 144px;
+      left: -12px;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 13px solid #015f64;
+      width: 0;
+      height: 0;
     }
   }
 
