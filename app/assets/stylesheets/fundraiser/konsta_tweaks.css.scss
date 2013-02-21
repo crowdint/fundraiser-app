@@ -21,13 +21,13 @@ body.home-front {
     color: #888;
     .nav {
       font-weight: 300;
-      margin-top: 14px;
+      margin-top: 3px;
     }
     .blog-btn {
       background: none repeat scroll 0 0 #F8C853;
       color: black;
       font-size: 14px;
-      margin-top: -7px;
+      margin-top: 4px;
       padding: 5px 0;
       text-align: center;
       width: 50px;
@@ -147,10 +147,16 @@ body.home-front {
 
 
 
+  .rewards-push {
+    margin-left: 50px;
+  }
   #rewards {
+    margin-left: 25px;
+    margin-right: -25px;
     background: #015f64;
     padding: 15px 15px;
     position: relative;
+
     h4 {
       color: #F8C552;
       font-size: 24px;
@@ -237,4 +243,28 @@ body.home-front {
       }
     }
   }
+}
+
+.ribbon {
+  display: block;
+  img { display: block;}
+  position: absolute;
+  z-index: 2;
+  top: 43px;
+  right: 0;
+}
+.expiration-date {
+  select#expires_on_1i {
+    width: 70px;
+  }
+  select#expires_on_2i{
+    float: left;
+    width: 55px;
+    margin-right: 5px;
+  }
+
+}
+
+.backers-share {
+  display: none;
 }

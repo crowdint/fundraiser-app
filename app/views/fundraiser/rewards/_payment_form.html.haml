@@ -17,7 +17,7 @@
       %label.control-label
         = image_tag 'reward.png'
       .controls
-        = select_tag 'contributor[amount]', options_from_collection_for_select(@rewards, "amount", "title")
+        = select_tag 'contributor[amount]', options_from_collection_for_select(@rewards, "amount", "title_with_amount")
     .control-group
       %label.control-label
         = image_tag 'card.png'
@@ -31,13 +31,16 @@
     .control-group
       %label.control-label
         = image_tag 'expiration.png'
-      .controls
-        %input.card-expiry-month.span1{:size => "2", :type => "text", :placeholder => "MM"}/
-        %input.card-expiry-year.span1{:size => "4", :type => "text", :placeholder => "YYYY"}/
+      .controls.expiration-date
+        = date_select 'expires', 'on', {:discard_day => true, :date_separator => '/', :start_year => Date.today.year, :end_year => (Date.today.year+10), :use_month_numbers => true}, class: 'select'
     .control-group.button
       %button.submit-button{:type => "submit"}
         %span
         Submit Payment
         %span
+
+  .backers-share= render 'fundraiser/rewards/social_links'
+
+
 
 

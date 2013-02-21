@@ -22,15 +22,11 @@
       %span.date #{Fundraiser::Settings.funding_end_date}
 .row
   .span12.social
-    %script{:src => "http://w.sharethis.com/button/buttons.js", :type => "text/javascript"}
-    :javascript
-      stLight.options({publisher: "1f6a2a22-dd71-4dcd-9825-4e472822e217", doNotHash: false, doNotCopy: false, hashAddressBar: false});
     %span.st_facebook_large{:displaytext => "Facebook"}
     %span.st_googleplus_large{:displaytext => "Google +"}
-    %span.st_twitter_large{:displaytext => "Tweet"}
+    %span.st_twitter_large{:displaytext => "Tweet", :st_via => 'magmaconf'}
     %span.st_linkedin_large{:displaytext => "LinkedIn"}
     %span.st_fblike_large{:displaytext => "Facebook Like"}
-    %span.st_pinterest_large{:displaytext => "Pinterest"}
 
 
 .row
@@ -39,7 +35,7 @@
       Backed by
       %span.backers #{Fundraiser::Contribution.count}
       people
-  .span4
+  .span4.rewards-push
     %h2 Choose a Reward
 .row
   .span5.offset2
