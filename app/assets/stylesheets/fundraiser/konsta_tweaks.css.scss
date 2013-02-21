@@ -5,6 +5,22 @@ body.home-front {
   color: white;
   text-transform: uppercase;
 }
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -42px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, #push {
+  height: 42px; /* .push must be the same height as .footer */
+}
+
 .home-front {
   header {
     background: white;
@@ -184,7 +200,7 @@ body.home-front {
   }
 
   footer {
-    margin-top:20px;
+    height: 40px;
     padding: 5px 5px;
     color: gray;
     font-size: 12px;

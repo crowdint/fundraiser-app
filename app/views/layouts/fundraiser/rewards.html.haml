@@ -28,12 +28,14 @@
         })();
 
   %body.home-front
-    = link_to 'https://github.com/crowdint/fundraiser.git', class: 'ribbon' do
-      = image_tag 'powered_by_fundraiser.png'
-    %header= render 'fundraiser/application/navbar'
-    .container
-      .row= render 'fundraiser/application/alerts'
-      = yield
+    #wrap
+      = link_to 'https://github.com/crowdint/fundraiser.git', class: 'ribbon' do
+        = image_tag 'powered_by_fundraiser.png'
+      %header= render 'fundraiser/application/navbar'
+      .container
+        .row= render 'fundraiser/application/alerts'
+        = yield
+      #push
     %footer
       = link_to 'http://crowdint.com', class: 'pull-left' do
         = image_tag 'logo-crowd.svg'
