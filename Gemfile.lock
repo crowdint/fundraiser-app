@@ -68,12 +68,14 @@ GEM
       slim
       state_machine
       strong_parameters
+    daemons (1.1.9)
     devise (2.1.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
     erubis (2.7.0)
+    eventmachine (1.0.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     gravtastic (3.2.6)
@@ -158,6 +160,10 @@ GEM
       activemodel (~> 3.0)
       railties (~> 3.0)
     temple (0.5.5)
+    thin (1.5.0)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     thor (0.17.0)
     tilt (1.3.3)
     treetop (1.4.12)
@@ -186,4 +192,5 @@ DEPENDENCIES
   rails (~> 3.2.12)
   sass-rails (~> 3.2.3)
   sqlite3
+  thin
   uglifier (>= 1.0.3)

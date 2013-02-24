@@ -30,3 +30,4 @@ gem 'crowdblog', '~> 0.3.0'
 
 gem 'devise'
 gem 'quiet_assets'
+gem 'thin'
