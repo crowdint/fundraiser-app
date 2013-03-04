@@ -6,7 +6,7 @@
           = image_tag 'fundraiser.png'
         - if current_user
           %ul.nav
-            %li= link_to 'Blog', crowdblog.root_path
+            %li= link_to 'About', crowdblog.root_path
             %li= link_to 'Manage Rewards', fundraiser.manage_rewards_path
             %li= link_to 'Manage Blog', crowdblog.admin_posts_path
             %li= link_to 'Settings', fundraiser.edit_manage_settings_path
