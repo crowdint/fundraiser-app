@@ -9,7 +9,11 @@
         = link_to 'http://magmaconf.com' do
           = image_tag 'magma-white.png'
 
-
+.row
+  .span12
+    %h1.thanks
+      %strong WE MADE IT!
+      Thank you very much for all your love and support! This is awesome!!!
 
 .row
   .span12
@@ -35,15 +39,4 @@
       Backed by
       %span.backers #{Fundraiser::Contribution.count}
       people
-  .span4.rewards-push
-    %h2 Choose a Reward
-.row
-  .span5.offset2
-    - if Fundraiser::Settings.is_open?
-      = render 'fundraiser/rewards/payment_form'
-    - else
-      %h2 The Fundraiser is closed now.
-  .span4
-    #rewards
-      = render @rewards
 
