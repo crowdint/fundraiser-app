@@ -51,6 +51,6 @@ development team, by adding engineers onsite or offsite. We pick our clients
 carefully, as we only work with companies we believe in. Find out more about
 us on our [website](http://www.crowdint.com).
 
-# Licencse
+# License
 
 MIT License. Copyright 2012 Crowd Interactive.
